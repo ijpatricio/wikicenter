@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f9c5be64d57667c7feb2a8b36ad67a0",
+    "content-hash": "ce707a9ccd0a9f97c9604d28d935abe6",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -6475,6 +6475,82 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "z3d0x/filament-fabricator",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Z3d0X/filament-fabricator.git",
+                "reference": "74ee409ee0c7926c23ed402d12e3c624c8908a84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Z3d0X/filament-fabricator/zipball/74ee409ee0c7926c23ed402d12e3c624c8908a84",
+                "reference": "74ee409ee0c7926c23ed402d12e3c624c8908a84",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.15",
+                "illuminate/contracts": "^9.0 | ^10.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.13.5"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^6.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "pestphp/pest-plugin-livewire": "^1.0",
+                "pestphp/pest-plugin-parallel": "^0.3",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Z3d0X\\FilamentFabricator\\FilamentFabricatorServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentFabricator": "Z3d0X\\FilamentFabricator\\Facades\\FilamentFabricator"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Z3d0X\\FilamentFabricator\\": "src",
+                    "Z3d0X\\FilamentFabricator\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ziyaan Hassan",
+                    "email": "ziyaan2010@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Block-Based Page Builder Skeleton for your Filament Apps",
+            "homepage": "https://github.com/z3d0x/filament-fabricator",
+            "keywords": [
+                "Z3d0X",
+                "filament-fabricator",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/Z3d0X/filament-fabricator/issues",
+                "source": "https://github.com/Z3d0X/filament-fabricator/tree/v1.1.1"
+            },
+            "time": "2023-02-17T06:47:33+00:00"
         }
     ],
     "packages-dev": [
