@@ -12,11 +12,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        if(app()->environment('production')) {
+            abort(500, "I'm never gonna give you up!");
+        }
 
          \App\Models\User::factory()->create([
              'name' => 'Test User',
              'email' => 'test@example.com',
          ]);
+
+        $this->call(PagesTableSeeder::class);
     }
 }
