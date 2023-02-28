@@ -19,5 +19,7 @@ class PagesTableSeeder extends Seeder
             'slug' => "assemble-mechanical-keyboard",
             'layout' => "default",
         ]);
+
+
     }
 }
