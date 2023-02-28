@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e17d68edf235f97fd5869c8c090bb7a5",
+    "content-hash": "7ba3942fa207a5a275f2a951ad06cf5d",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -7463,6 +7463,60 @@
                 }
             ],
             "time": "2023-02-19T16:25:13+00:00"
+        },
+        {
+            "name": "orangehill/iseed",
+            "version": "v2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orangehill/iseed.git",
+                "reference": "383608d85bdabac53f293b3a63059ca82bad4eec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orangehill/iseed/zipball/383608d85bdabac53f293b3a63059ca82bad4eec",
+                "reference": "383608d85bdabac53f293b3a63059ca82bad4eec",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/filesystem": "5.x",
+                "laravel/framework": "~5.3.8",
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Orangehill\\Iseed": "src/"
+                },
+                "classmap": [
+                    "src/Orangehill/Iseed/Exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tihomir Opacic",
+                    "email": "tihomir.opacic@orangehilldev.com"
+                }
+            ],
+            "description": "Generate a new Laravel database seed file based on data from the existing database table.",
+            "keywords": [
+                "artisan",
+                "generators",
+                "laravel",
+                "seed"
+            ],
+            "support": {
+                "issues": "https://github.com/orangehill/iseed/issues",
+                "source": "https://github.com/orangehill/iseed/tree/master"
+            },
+            "time": "2016-12-22T10:12:20+00:00"
         },
         {
             "name": "phar-io/manifest",
