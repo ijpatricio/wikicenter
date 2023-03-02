@@ -21,12 +21,6 @@ services:
             - '.:/var/www/html'
         networks:
             - sail
-        depends_on:
-            - mysql
-            - redis
-            - meilisearch
-            - mailpit
-            - selenium
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
@@ -74,6 +68,11 @@ services:
             - 'sail-meilisearch:/meili_data'
         networks:
             - sail
+        depends_on:
+            - mysql
+            - redis
+            - meilisearch
+            - selenium
         healthcheck:
             test:
                 - CMD
@@ -83,13 +82,6 @@ services:
                 - 'http://localhost:7700/health'
             retries: 3
             timeout: 5s
-    mailpit:
-        image: 'axllent/mailpit:latest'
-        ports:
-            - '${FORWARD_MAILPIT_PORT:-1025}:1025'
-            - '${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025'
-        networks:
-            - sail
     selenium:
         image: seleniarm/standalone-chromium
         extra_hosts:
