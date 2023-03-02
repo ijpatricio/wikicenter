@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Filament\Facades\Filament;
 use Illuminate\Foundation\Vite;
 use Illuminate\Support\ServiceProvider;
 use Z3d0X\FilamentFabricator\Facades\FilamentFabricator;
@@ -25,6 +26,13 @@ class AppServiceProvider extends ServiceProvider
         FilamentFabricator::registerStyles([
             app(Vite::class)('resources/css/app.css'),
         ]);
+
+        Filament::serving(function () {
+            // Using Vite
+            Filament::registerTheme(
+                app(Vite::class)('resources/css/app.css'),
+            );
+        });
 
         PageBuilder::configureUsing(function (PageBuilder $builder) {
             $builder->collapsed();
