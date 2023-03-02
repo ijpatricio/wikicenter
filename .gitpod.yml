@@ -11,6 +11,8 @@ tasks:
       sed -i "s#GITPOD_VITE_URL=#GITPOD_VITE_URL=$(gp url 5173)#g" .env
 
   - name: Execute Laravel Sail
+    # Fix because of https://github.com/gitpod-io/gitpod/issues/16614
+    before: sudo curl -o /usr/local/bin/docker-compose -fsSL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-$(uname -m)
     command: >
       gp sync-await composer-dependencies &&
       ./vendor/bin/sail up -d &&
@@ -22,7 +24,7 @@ tasks:
     command: >
       gp sync-await sail-up &&
       ./vendor/bin/sail npm install &&
-      ./vendor/bin/sail npm run dev -- --host
+      ./vendor/bin/sail npm run dev
 
 ports:
   - port: 5173
