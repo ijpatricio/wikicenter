@@ -22,4 +22,10 @@ tasks:
     command: >
       gp sync-await sail-up &&
       ./vendor/bin/sail npm install &&
-      ./vendor/bin/sail npm run dev
+      ./vendor/bin/sail npm run dev -- --host
+
+ports:
+  - port: 5173
+    onOpen: ignore
+    visibility: public
+    name: Node Server for Vite
