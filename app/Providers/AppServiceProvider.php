@@ -23,6 +23,17 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if (! app()->runningInConsole()) {
+            $this->bootWebRgistrations();
+        }
+
+        PageBuilder::configureUsing(function (PageBuilder $builder) {
+            $builder->collapsed();
+        });
+    }
+
+    protected function bootWebRgistrations()
+    {
         FilamentFabricator::registerStyles([
             app(Vite::class)('resources/css/app.css'),
         ]);
@@ -32,10 +43,6 @@ class AppServiceProvider extends ServiceProvider
             Filament::registerTheme(
                 app(Vite::class)('resources/css/app.css'),
             );
-        });
-
-        PageBuilder::configureUsing(function (PageBuilder $builder) {
-            $builder->collapsed();
         });
     }
 }
