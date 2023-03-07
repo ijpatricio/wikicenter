@@ -1,5 +1,8 @@
 ## About WikiCenter
 
+![Intro 1](./docs/images/intro-1.png)
+
+
 It is a Wiki software :)
 
 Visit [Youtube Playlist](https://www.youtube.com/watch?v=aRI9-DzXOkI&list=PL2Njk5tK9lmuM5Oac06vxILXJvoYS3Qrs) to 
