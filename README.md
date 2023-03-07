@@ -11,17 +11,26 @@ If you want to try if, go to [WikiCenter on GitPod](https://gitpod.io/#https://g
 You can create an account in under a minute, using your Git provider of choice. You don't have to give any permissions to repositories,
 only to read your e-mail address.
 
-The tasks in [.gitpod.yml](./.gitpod.yml) will run. 
+The tasks in [.gitpod.yml](./.gitpod.yml) will run.
 
-After all the 4 tasks are running, you can visit the app, for the link provided on the service of port 80 (even it will be https on 443) :)
+![Coding in GitPod 1](./docs/images/coding-in-gitpod-1.png)
 
-Then run:
+After all the 4 tasks are running, the last one keeps running `Vite`.
+
+![Coding in GitPod 2](./docs/images/coding-in-gitpod-2.png)
+
+You can now visit the app, for the link provided on local 80. (It will be public 443 SSL)
+
+![Coding in GitPod 3](./docs/images/coding-in-gitpod-3.png)
+Then run, in an available terminal, (or a new one):
 
 ```bash
-./vendor/bin/sail npm run dev
+./vendor/bin/sail artisan migrate:fresh --seed
 ```
 
 And now you can navigate to `/admin`. The login form will be filled for you automatically, just click Login :)
+
+![Coding in GitPod 4](./docs/images/coding-in-gitpod-4.png)
 
 ## License
 
