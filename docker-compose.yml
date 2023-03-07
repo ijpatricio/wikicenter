@@ -71,7 +71,6 @@ services:
         depends_on:
             - mysql
             - redis
-            - meilisearch
             - selenium
         healthcheck:
             test:
