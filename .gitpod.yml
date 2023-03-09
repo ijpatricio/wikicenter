@@ -31,3 +31,18 @@ ports:
     onOpen: ignore
     visibility: public
     name: Node Server for Vite
+
+# Configure vscode
+vscode:
+  extensions:
+    - bmewburn.vscode-intelephense-client
+    - eamodio.gitlens
+    - ikappas.composer
+    - ms-azuretools.vscode-docker
+    - ecmel.vscode-html-css
+    - MehediDracula.php-namespace-resolver
+    - wmaurer.change-case
+    - Equinusocio.vsc-community-material-theme
+    - EditorConfig.EditorConfig
+    - streetsidesoftware.code-spell-checker
+    - rangav.vscode-thunder-client
