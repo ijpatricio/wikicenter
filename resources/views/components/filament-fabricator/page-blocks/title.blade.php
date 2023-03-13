@@ -8,8 +8,3 @@
         <h3> {{ $subtitle }} </h3>
     </div>
 </div>
-
-<x-curator-curation :media="1" curation="JustXico" loading="lazy" />
-
-<x-curator-curation :media="1" curation="" loading="lazy" />
-
