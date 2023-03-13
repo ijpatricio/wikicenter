@@ -2,18 +2,25 @@
 
 ![Intro 1](./docs/images/intro-1.png)
 
-
 It is a Wiki software :)
 
 Visit [Youtube Playlist](https://www.youtube.com/watch?v=aRI9-DzXOkI&list=PL2Njk5tK9lmuM5Oac06vxILXJvoYS3Qrs) to 
 see live coding sessions on this repository.
+
+## Roadmap
+
+[Visit TODO's](./TODO.md)
+
+## Running locally
+
+(WIP)...
 
 ## Running WikiCenter on GitPod
 
 GitPod is a Cloud Based Development Environment. It allows us to automate the creation of an environment on 
 the cloud, to develop, check Features and PR previews live, onboarding people faster, pair programming, playgrounds, and more.
 
-If you want to try if, go to [WikiCenter on GitPod](https://gitpod.io/#https://github.com/ijpatricio/wikicenter).
+If you want to try it, [open in GitPod](https://gitpod.io/#https://github.com/ijpatricio/wikicenter).
 You can create an account in under a minute, using your Git provider of choice. You don't have to give any permissions to repositories,
 only to read your e-mail address.
 
