@@ -56,6 +56,9 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'url_for_chrome_docker' => env('APP_URL_FOR_CHROME_DOCKER', 'http://wikicenter'),
+
+
     'asset_url' => env('ASSET_URL'),
 
     /*
