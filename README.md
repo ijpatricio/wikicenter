@@ -4,6 +4,8 @@
 
 It is a Wiki software :)
 
+The creation and outline can be read on this [Blog Post](https://blog.jpat.dev/building-a-wiki-software-with-laravel-and-filament)
+
 Visit [Youtube Playlist](https://www.youtube.com/watch?v=aRI9-DzXOkI&list=PL2Njk5tK9lmuM5Oac06vxILXJvoYS3Qrs) to 
 see live coding sessions on this repository.
 
