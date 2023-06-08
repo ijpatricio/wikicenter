@@ -23,7 +23,7 @@ tasks:
   - name: Install Node dependencies and run Vite
     command: >
       gp sync-await sail-up &&
-      ./vendor/bin/sail npm install &&
+      ./vendor/bin/sail npm install --ignore-scripts  &&
       ./vendor/bin/sail npm run dev
 
 ports:
