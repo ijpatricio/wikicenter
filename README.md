@@ -43,7 +43,13 @@ After clone the project you need to take the following steps:
    ./vendor/bin/sail up
    ```
 
-5. Seed database with dummy data
+5. Run the migrations
+
+   ```shell
+   sail artisan migrate
+   ```
+
+6. Seed database with dummy data
 
    ```shell
    sail artisan db:seed
@@ -51,15 +57,16 @@ After clone the project you need to take the following steps:
 
    In case you are running commands inside container, you just need to run `php artisan db:seed` without the prefix sail.
 
-6. Install frontend dependencies
+7. Install frontend dependencies
 
    ```shell
    npm install && npm run dev
    ```
 
-7. Go to `http://localhost/admin`
+8. Go to `http://localhost/admin`
 
-8. Enjoy
+9. Enjoy
+
 
 ## Running WikiCenter on GitPod
 
