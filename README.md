@@ -15,7 +15,51 @@ see live coding sessions on this repository.
 
 ## Running locally
 
-(WIP)...
+#### With Docker Desktop 
+
+After clone the project you need to take the following steps: 
+
+1. Run the composer install 
+
+   ```shell
+   composer install
+   ```
+
+2. Copy the .env.example file and create new one
+
+   ```shell
+   cp .env.example .env
+   ```
+
+3. Generate a key
+
+   ```shell
+   php artisan key:generate
+   ```
+
+4. Build container
+
+   ```shell
+   ./vendor/bin/sail up
+   ```
+
+5. Seed database with dummy data
+
+   ```shell
+   sail artisan db:seed
+   ```
+
+   In case you are running commands inside container, you just need to run `php artisan db:seed` without the prefix sail.
+
+6. Install frontend dependencies
+
+   ```shell
+   npm install && npm run dev
+   ```
+
+7. Go to `http://localhost/admin`
+
+8. Enjoy
 
 ## Running WikiCenter on GitPod
 
